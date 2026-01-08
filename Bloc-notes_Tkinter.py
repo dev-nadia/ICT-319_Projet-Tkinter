@@ -1,115 +1,108 @@
 # Nom: I319_Bloc-notes_Tkinter.py
 # Auteur: Nadia Abdi Mohamoud
-# Date:15.12.20205
+# Date:08.01.2026
 # Purpose : Créer un projet Tkinter en utilisant .grid(), .place(), .pack()
 
-
-# On importe le module tkinter et on le renomme en 'tk' pour simplifier son utilisation
+#Bibliotèques:
 import tkinter as tk
-from tkinter import Menu
-from tkinter import filedialog
+from tkinter import filedialog,messagebox, Menu
 
-#les fonctions
+#Fonctions Édition:
+def copy_text():
+	text_area.event_generate ("<<Copy>>")
+	messagebox.showinfo("Copié","Texte copié dans le presse-papier!")
 
-#def open
-   # file=filedialog.askopenfilename()
-  #  if file:
-      #  with
+def paste_text():
+	text_area.event_generate ("<<Paste>>")
+def cut_text():
+	text_area.event_generate ("<<Cut>>")
 
-#def save
+# Fonctions Fichier:
+def new_file():
+    text_area.delete("1.0", tk.END)
+def open_file():
+    filepath = filedialog.askopenfilename()
+    if filepath == "":
+        return #si on décide d'annuler
+    file = open(filepath, "r")
+    contenu= file.read()
+    file.close()
+    text_area.delete("1.0", tk.END)
+    text_area.insert(tk.END, contenu)
+def save_file():
+    filepath = filedialog.asksaveasfilename()
+    if filepath == "":
+        return
 
-#def save as
+    text= text_area.get("1.0",tk.END)
+    file= open(filepath, "w")
+    file.write(text)
+    file.close()
 
-#def copy
+def quit():
+    messagebox.showinfo(title="Au revoir", message="Merci d'avoir utilisé le bloc-notes !")
+    root.quit()
 
-#def paste
+def help_message():
+    messagebox.showinfo(title="Aide", message=
+    "Ceci est un bloc‑notes.\n" 
+    "Utilisez le menu \"Fichier\" pour ouvrir, enregistrer, créer ou quitter.\n" 
+    "Utilisez le menu \"Édition\" pour copier, coller ou couper.\n")
 
-#def cut
-
-
-#def bold
-
-#def italic
-
-#def color
-#
-
-
-
-
-
-
-
-
+#Fenêtre principale
 
 # Création de la fenêtre principale
 root = tk.Tk()
 
 # Titre de la fenêtre
 root.title("Bloc-notes")
-
 # Définir la taille de la fenêtre (largeur x hauteur)
 root.geometry("400x200")
 
-#ferme la fenêtre principale
-def quit():
-    root.quit()
-
 #création de la barre menu
-menubar= Menu(root)
+menubar = Menu(root)
 root.config(menu=menubar)
-#craétion du menu
+
+#Menu Fichier
+#création du menu
 file_menu=Menu(menubar,tearoff=False)
-
 #ajouter des éléments au menu (.add_command)
-
-file_menu.add_command(label="Nouveau",command=root.quit)
-file_menu.add_command(label="Ouvrir",command=root.quit)
-file_menu.add_command(label="Enregistrer",command=root.quit)
-file_menu.add_command(label="Enregistrer sous",command=root.quit)
+file_menu.add_command(label="Nouveau",command=new_file)
+file_menu.add_command(label="Ouvrir",command=open_file)
+file_menu.add_command(label="Enregistrer",command=save_file)
 file_menu.add_separator()
 file_menu.add_command(label="Quitter",command=root.quit)
 #ajouter le menu fichier à la barre menu et retirer la ligne trait tillés avec tearoff=False
 menubar.add_cascade(label="Fichier",menu=file_menu)
 
-
-#Menu édition
-edit_menu=Menu(menubar,tearoff=False)
-edit_menu.add_command(label="Gras",command=root.quit)
-edit_menu.add_command(label="Italique",command=root.quit)
-edit_menu.add_command(label="Couleur",command=root.quit)
-menubar.add_cascade(label="Édition",menu=edit_menu)#alt+144
-
-
 #Même chose mais pour le menu Style
-style_menu=Menu(menubar,tearoff=False)
-style_menu.add_command(label="Copier",command=root.quit)
-style_menu.add_command(label="Coller",command=root.quit)
-style_menu.add_command(label="Couper",command=root.quit)
-menubar.add_cascade(label="Modifier",menu=style_menu)
+edit_menu=Menu(menubar,tearoff=False)
+edit_menu.add_command(label="Copier",command=root.quit)
+edit_menu.add_command(label="Coller",command=root.quit)
+edit_menu.add_command(label="Couper",command=root.quit)
+menubar.add_cascade(label="Modifier",menu=edit_menu)
 
-#Boutons style:
-toolbar=tk.Frame(root)
-toolbar.pack(side="top", fill="x")
+#Zone de texte + Scrollbar un grid dans un frame
+frame=tk.Frame(root)
+frame.pack(fill="both",expand=True)
 
-#messagebox.showinfo("Bloc-notes", f"Voulez-vous enregistrer les modifications : {move_count}\nCouleurs : {color_count}")
-
-
-#zone de text avec Text et .grid
-#text=tk.Frame(root,wrap="word")
-#text.pack(fill="both", expand=True)
-
-text=tk.Text(text,wrap="word")
-text.grid(row=0, column=0)
+text_area=tk.Text(frame, wrap="word")
+text_area.grid(row=0,column=0,sticky="nsew")
 
 #la barre de défilement
-scrollbar=tk.Scrollbar(root, orient="vertical",command=text.yview())
+
+scrollbar=tk.Scrollbar(frame,command=text_area.yview)
 scrollbar.grid(row=0, column=1, sticky="ns")
 
-text.configure(yscrollcommand=scrollbar.set)
+text_area.configure(yscrollcommand=scrollbar.set)
 
-root.grid_rowconfigure(1, weight=1)
-root.grid_rowconfigure(0, weight=1)
+frame.grid_rowconfigure(0, weight=1)
+frame.grid_rowconfigure(0, weight=1)
+
+#Bouton Aide ave.place()
+btn_help = tk.Button(root, text="?", width=3, command=help_message)
+btn_help.place(relx=0,rely=1, anchor="sw")
+
 
 # Boucle principale de Tkinter : garde la fenêtre ouverte et active
 root.mainloop()
