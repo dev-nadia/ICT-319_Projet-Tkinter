@@ -5,7 +5,7 @@
 - Auteur: Nadia Abdi Mohamoud (SI-CA1a) 
 
 ## Description 
-Le projet consiste à créer une application de bloc-notes développée en Python avec la bibliothèque Tkinter. Il permet de créer, modifier et enregistrer des fichiers.
+Le projet consiste à créer une application de bloc-notes développée en Python avec la bibliothèque Tkinter en utlisant les gestionnaires de géométrie `.pack()`, `.grid()`, `.place()`. Il permet de créer, modifier et enregistrer des fichiers.
 
 à créer une application simple en Python permettant à un utilisateur de jouer à *Feuille, Caillou, Ciseaux* contre l’ordinateur. L’utilisateur entre son choix, l’ordinateur génère le sien aléatoirement, puis le programme affiche le résultat, un message personnalisé en fonction de celui-ci et le score actuel.
 
