@@ -62,8 +62,6 @@ Ce projet a un niveau de difficulté de débutant à intermédiaire.
 
 ### Prérequis
 Python 3.12 doit être installé sur votre ordinateur.  
-Tkinter (interface graphique native)
-
 ### Étapes
 
 **Téléchargez le projet :**
@@ -101,7 +99,7 @@ Au départ, j’avais prévu de faire des boutons pour la mise en forme du texte
 - Gestion d’erreur (par exemple, s’il est impossible d’ouvrir le fichier)
 - Raccourcis clavier
 - Fonctionnalités avancées
-- 
+  
 ## Conclusion 
 Ce projet m’a permis de mettre en pratique les notions de base de Python tels que les fonctions et les structurelles conditionnelles. Grâce à l’utilisation de Tkinter, j’ai appris à créer une interface graphique simple et fonctionnelle et manipuler les différents widgets comme les menus, la zone de texte, la barre de défilement. Ce travail m’a aussi permis de revisiter GitHub et de revoir son utilisation.
 
