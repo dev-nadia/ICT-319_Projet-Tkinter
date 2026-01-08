@@ -79,6 +79,7 @@ python Bloc-notes_Tkinter.py
 ```
 ## Utilisation 
 Après avoir lancé le programme, l’utilisateur peut commencer à écrire du texte dans la zone principale. Le  menu *Fichier* permet de créer un nouveau document,  d’ouvrir un fichier texte déjà présent sur l’ordinateur  ou d’enregistrer le contenu présent dans la zone de texte. Le menu *Édition* permet de copier, coller et couper. Le menu*Style* permet de mettre en gras, en italique ou de modifier la couleur du texte sélectionné. Pour terminer, le bouton « ?» affiche une petite fenêtre d’aide expliquant le fonction générale du bloc-notes. 
+
 ## Bibliothèques utilisées : 
 Le programme utilise uniquement des modules de la bibliothèque standard Python tels que : 
 Tkinter : bibliothèque standard pour la création de l’interface graphique
@@ -102,29 +103,30 @@ Ce projet m’a permis de mettre en pratique les notions de base de Python tels 
 ## Références
 Ce projet s'est appuyé sur les ressources suivantes: 
 ### Support de cours
-Cookbook d’introduction python sur Moodle
-Cookbook Introduction TK  sur Moodle
-Book 1 intro tk sur Moodle
+- Cookbook d’introduction python sur Moodle
+- Cookbook Introduction TK  sur Moodle
+- Book 1 intro tk sur Moodle
 ### Tutoriels et articles consultés
-Menus Tkinter : Simplifiez vos interfaces
+- Menus Tkinter : Simplifiez vos interfaces
 https://blog.alphorm.com/ajouter-menu-tkinter-interface-python
-Dialogues de fichiers avec Tkinter
+- Dialogues de fichiers avec Tkinter
 https://blog.alphorm.com/dialogues-fichiers-tkinter
-Modifier Police et Taille des Widgets Tkinter — CodeSpace
+- Modifier Police et Taille des Widgets Tkinter — CodeSpace
 https://wikiform.fr/codespace/modifier-police-et-taille-des-widgets-tkinter/
-Comment fermer une fenêtre Tkinter avec un bouton — DelftStack https://www.delftstack.com/fr/howto/python-tkinter/how-to-close-a-tkinter-window-with-a-button/
-Tkinter Scrollbar
+- Comment fermer une fenêtre Tkinter avec un bouton — DelftStack https://www.delftstack.com/fr/howto/python-tkinter/how-to-close-a-tkinter-window-with-a-button/
+- Tkinter Scrollbar
 https://www.tutorialspoint.com/python/tk_scrollbar.htm
-How To Create Message Boxes With Python Tkinter? https://www.pythontutorial.net/tkinter/tkinter-messagebox/
-Tkinter Menu 
+- How To Create Message Boxes With Python Tkinter? https://www.pythontutorial.net/tkinter/tkinter-messagebox/
+- Tkinter Menu 
 https://www.pythontutorial.net/tkinter/tkinter-menu/
-Tkinter Text
+- Tkinter Text
 https://www.pythontutorial.net/tkinter/tkinter-text/
-How to Wrap Text in Label in Tkinter Python 
+- How to Wrap Text in Label in Tkinter Python 
 https://www.delftstack.com/howto/python-tkinter/how-to-wrap-text-in-label-in-tkinter/
-Python | place() method in Tkinter — GeeksforGeeks https://www.geeksforgeeks.org/python-place-method-in-tkinter/
-Change the color of certain words in the Tkinter Text widget — GeeksforGeeks https://www.geeksforgeeks.org/python/change-the-color-of-certain-words-in-the-tkinter-text-widget/
-Python Tkinter – Choose Color Dialog — GeeksforGeeks https://www.geeksforgeeks.org/python/python-tkinter-choose-color-dialog/
+- Python | place() method in Tkinter — GeeksforGeeks https://www.geeksforgeeks.org/python-place-method-in-tkinter/
+- Change the color of certain words in the Tkinter Text widget —GeeksforGeeks
+https://www.geeksforgeeks.org/python/change-the-color-of-certain-words-in-the-tkinter-text-widget/
+- Python Tkinter – Choose Color Dialog — GeeksforGeeks https://www.geeksforgeeks.org/python/python-tkinter-choose-color-dialog/
 Tkinter: Using tags to style text — python.19633.com https://python.19633.com/fr/GUI/Tkinter/1001036224.html
 ### Outils utilisés
 - Microsoft Copilot
