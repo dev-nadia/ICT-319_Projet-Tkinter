@@ -8,7 +8,7 @@
 Le projet consiste à créer une petite application de type bloc-notes, développée en Python avec la bibliothèque Tkinter. Il permet de créer, modifier et enregistrer des fichiers. L’objectif est d’apprendre à utilisant les gestionnaires de layout `.pack()`, `.grid()`, `.place()`.
 ## Fonctionnalités 
 ### Menu Fichier
--**Nouveau ** :efface le texte
+*Nouveau* :efface le texte
 -**Ouvrir ** :charge un fichier `.txt`
 -**Enregistrer ** :sauvegarde le fichier
 -**Quitter ** :ferme l’application
