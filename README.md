@@ -41,21 +41,21 @@ Le projet consiste à créer une petite application de type bloc-notes, dévelop
 ## Niveau de difficulté
 Ce projet a un niveau de difficulté de débutant à intermédiaire.
 
-- **Niveau facile** :  
-  Importation et utilisation de la bibliothèque standard Tkinter pour l’interface graphique.  
-  Création de la fenêtre Tkinter  
-  Ajout d’un widget `Text`  
-  Ajout d’un bouton  
-  Utilisation de `.pack()`, `.grid()`, `.place()`  
-  Affichage de `messagebox.showinfo()`  
-  Utilisation des structures conditionnelles (`if`, `return`)  
-  Organisation du code en fonctions claires et distinctes  
+- **Niveau facile** :
+  - Importation et utilisation de Tkinter
+  - Création de la fenêtre Tkinter
+  - Ajout d’un widget `Text`
+  - Ajout d’un bouton
+  - Utilisation de `.pack()`, `.grid()`, `.place()`
+  - Affichage de `messagebox.showinfo()`
+  - Utilisation des structures conditionnelles (`if`, `return`)
+  - Organisation du code en fonctions claires
 
-- **Niveau intermédiaire** :  
-  Manipulation des fichiers  
-  Utilisation de menus (`Menu`, `add_command`, `add_cascade`)  
-  Utilisation de tags pour le style (`tag_configure`, `tag_add`)  
-  Ajout d’une barre de défilement fonctionnelle (scrollbar)  
+- **Niveau intermédiaire** :
+  - Manipulation des fichiers
+  - Utilisation de menus (`Menu`, `add_command`, `add_cascade`)
+  - Utilisation de tags (`tag_configure`, `tag_add`)
+  - Ajout d’une barre de défilement fonctionnelle (scrollbar)  
 
 ## Installation
 
