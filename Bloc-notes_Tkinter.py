@@ -120,7 +120,7 @@ menubar.add_cascade(label=" Édition",menu=edit_menu)
 style_menu=Menu(menubar,tearoff=False)# # création d'un menu déroulant + retire la ligne en points tillé avec "tearoff=False"
 style_menu.add_command(label="Gras",command=bold_text)
 style_menu.add_command(label="Italique",command=italic_text)
-style_menu.add_command(label="Couleur",command=change_color)
+style_menu.add_command(label="Couleur de texte",command=change_color)
 menubar.add_cascade(label="Style",menu=style_menu)
 
 #----Zone de texte et Scrollbar (un grid dans un frame)--
@@ -149,5 +149,6 @@ btn_help.place(relx=0,rely=1, anchor="sw")
 
 
 root.mainloop() #boucle principale de Tkinter : garde la fenêtre ouverte et active
+
 
 
