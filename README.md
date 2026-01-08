@@ -83,14 +83,14 @@ Après avoir lancé le programme, l’utilisateur peut commencer à écrire du t
 
 ## Bibliothèques utilisées
 Le programme utilise uniquement des modules de la bibliothèque standard Python tels que : 
-Tkinter : bibliothèque standard pour la création de l’interface graphique
-- `Tk`: fenêtre principale
-- `Text` : zone de texte
-- `Menu` : création de la barre de menus
-- `Scrollbar` : barre de défilement verticale 
-- `filedialog` : ouverture et enregistrement des fichiers
-- `messagebox` : affiche les messages
-- `colorchooser` :sélectionne une couleur pour le texte
+- Tkinter : bibliothèque standard pour la création de l’interface graphique
+  - `Tk`: fenêtre principale
+  - `Text` : zone de texte
+  - `Menu` : création de la barre de menus
+  - `Scrollbar` : barre de défilement verticale 
+  - `filedialog` : ouverture et enregistrement des fichiers
+  - `messagebox` : affiche les messages
+  - `colorchooser` :sélectionne une couleur pour le texte
   
 Aucun installation n’est normalement nécessaire, Tkinter est inclus avec Python sur Windows, macOs et la plupart des distributions Linux.
 
