@@ -31,7 +31,7 @@ def open_file():
     filepath = filedialog.askopenfilename()
     if filepath == "":
         return #si on décide d'annuler
-    file = open(filepath, "r")
+    file = open(filepath, "r",encoding="utf-8") #encoding="utf-8" évite qu'il est un problème avec les accents
     contenu= file.read()
     file.close()
     text_area.delete("1.0", tk.END)
@@ -42,7 +42,7 @@ def save_file():
         return
 
     text= text_area.get("1.0",tk.END)
-    file= open(filepath, "w")
+    file= open(filepath, "w",encoding="utf-8")
     file.write(text)
     file.close()
 
