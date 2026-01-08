@@ -78,7 +78,7 @@ python Bloc-notes_Tkinter.py
 
 ```
 ## Utilisation 
-Après avoir lancé le programme, l’utilisateur peut commencer à écrire du texte dans la zone principale. Le  menu *Fichier* permet de créer un nouveau document,  d’ouvrir un fichier texte déjà présent sur l’ordinateur  ou d’enregistrer le contenu présent dans la zone de texte. Le menu *Édition* permet de copier, coller et couper. Le menu*Style* permet de mettre en gras, en italique ou de modifier la couleur du texte sélectionné. Pour terminer, le bouton « ?» affiche une petite fenêtre d’aide expliquant le fonction générale du bloc-notes. 
+Après avoir lancé le programme, l’utilisateur peut commencer à écrire du texte dans la zone principale. Le  menu *Fichier* permet de créer un nouveau document,  d’ouvrir un fichier texte déjà présent sur l’ordinateur  ou d’enregistrer le contenu présent dans la zone de texte. Le menu *Édition* permet de copier, coller et couper. Le menu *Style* permet de mettre en gras, en italique ou de modifier la couleur du texte sélectionné. Pour terminer, le bouton « ?» affiche une petite fenêtre d’aide expliquant le fonction générale du bloc-notes. 
 
 ## Bibliothèques utilisées
 Le programme utilise uniquement des modules de la bibliothèque standard Python tels que : 
