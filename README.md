@@ -5,39 +5,52 @@
 - Auteur: Nadia Abdi Mohamoud (SI-CA1a) 
 
 ## Description 
-Le projet consiste à créer une application de bloc-notes développée en Python avec la bibliothèque Tkinter en utlisant les gestionnaires de layout `.pack()`, `.grid()`, `.place()`. Il permet de créer, modifier et enregistrer des fichiers.
-
-à créer une application simple en Python permettant à un utilisateur de jouer à *Feuille, Caillou, Ciseaux* contre l’ordinateur. L’utilisateur entre son choix, l’ordinateur génère le sien aléatoirement, puis le programme affiche le résultat, un message personnalisé en fonction de celui-ci et le score actuel.
-
+Le projet consiste à créer une petite application de type bloc-notes, développée en Python avec la bibliothèque Tkinter. Il permet de créer, modifier et enregistrer des fichiers. L’objectif est d’apprendre à utilisant les gestionnaires de layout `.pack()`, `.grid()`, `.place()`.
 ## Fonctionnalités 
-
-- Ouverture et enregistrer des fichiers `.txt`
-
-- Menu simple : Nouveau, Ouvrir, Enregistrer, Quitter 
-
-- Interface minimaliste 
-
+### Menu Fichier
+-**Nouveau ** :efface le texte
+-**Ouvrir ** :charge un fichier `.txt`
+-**Enregistrer ** :sauvegarde le fichier
+-**Quitter ** :ferme l’application
+### Menu Édition
+- Copier
+- Coller
+-Couper
+### Menu Style
+-**Gras**
+-**Italique**
+-**Couleur de texte**
+### Aide
+-Bouton « ? » affiche un message explicatif
 ## Fonctions du programme 
 
-- **get_choix_utilisateur()**: affiche les choix de jeu et récupère le choix valide de l'utilisateur grâce à une boucle de contrôle des saisies (*c*, *f*, *s* ou *q*).
-
-- **get_choix_ordinateur()**: génère aléatoirement le choix de l'ordinateur parmi le choix *c*, *f* ou *s*.
-
-- **determine_gagnant(utilisateur, ordinateur)**: compare les choix de l'utilisateur et l'ordinateur puis retourne le résultat de la manche (victoire, défaite ou égalité)
-
-- **jeu()**:la boucle principale qui gère le déroulement complet du jeu.  
-  - Elle affiche un message de bienvenue, puis permet à l’utilisateur de jouer plusieurs manches contre l’ordinateur jusqu’à ce qu’il souhaite s'arrêter. 
-  - À chaque manche, elle récupère les choix de l’utilisateur et de l’ordinateur, détermine le gagnant, met à jour les scores, et affiche des messages personnalisés en fonction du résultat.
+- **new_file()**: efface tout le contenu de la zone de texte
+- **open_file()**:  ouvre un fichier texte et affiche son contenu
+- **save_file()**: enregistre le contenu de la zone de texte dans un fichier
+- **quit()**: fermer la fenêtre principale
+- **copy_text()** ,**paste_text()**  et**cut_text()** :
+- **bold_text()** ,**italic_text()**applique des styles au texte sélectionné
+- **change_color()**: ouvre une palette de couleurs et applique la couleur choisie
+- **help_message()**:affiche une fenêtre d’aide
 
 ## Niveau de difficulté : 
-- Utilisation de boucles `while` pour gérer et contrôler les entrées   utilisateurs
-- Boucle principale pour le déroulement du jeu
-- Utilisation de structures conditionnelles  (`if`, `else`, `elif`)
-- Utilisation d'un dictionnaire pour générer les choix
-- Importation et utilisation de bibliothèques standards Python `time` (pauses entre les messages) et `random` (choix aléatoire)
-- Utlisation de listes pour stocker et afficher les messages personnalisés
-- Suivi et mis à jour du score de l'utilisateur et de l'ordinateur
-- Organisation du code en fonctions claires et distinctes 
+Ce projet a un niveau de difficulté de débutant à intermédiaire. 
+- ** Niveau facile** :
+Importation et utilisation de la bibliothèque standard Tkinter pour l’interface graphique.
+Création de la fenêtre Tkinter
+Ajout d’un widget ´Text´
+Ajout d’un bouton
+Utilisation de `.pack()`, `.grid()`, `.place()`.
+Affichage de ´messagebox.showinfo()´
+Utilisation des structures conditionnelles (´if´,´return´) 
+Organisation du code en fonctions claires et distinctes
+- **Niveau intermédiaire** :
+Manipulation des fichiers 
+Utilisation de menus (´Menu´,´add_command,´add_cascade´)
+Utilisation de tags pour le style (´tag_configure´,´tag_add´)
+Ajout d’une barre de défilement fonctionnelle (scrollbar)
+
+
 
 ## Installation 
 
@@ -63,45 +76,55 @@ Tkinter (interface graphique native)
    python Bloc-notes_Tkinter.py.
 ```
 ## Utilisation 
-Après avoir lancé le programme, un message d’accueil s'affichera et vous invitera à choisir parmi ces quatre options :*feuille*, *caillou*, *ciseaux* ou *quitter*.
-
-Le programme affichera ensuite : 
-- Le choix de l’utilisateur (si *quitter*, il affichera un message d’adieu)
-- Le choix de l'ordinateur
-- Le résultat de la manche 
-- Un message personnalisé selon le résultat
-- Le score actuel 
-- La possibilité de rejouer ou de quitter 
-
+Après avoir lancé le programme, l’utilisateur peut commencer à écrire du texte dans la zone principale. Le  menu *Fichier* permet de créer un nouveau document,  d’ouvrir un fichier texte déjà présent sur l’ordinateur  ou d’enregistrer le contenu présent dans la zone de texte. Le menu *Édition* permet de copier, coller et couper. Le menu*Style* permet de mettre en gras, en italique ou de modifier la couleur du texte sélectionné. Pour terminer, le bouton « ?» affiche une petite fenêtre d’aide expliquant le fonction générale du bloc-notes. 
 ## Bibliothèques utilisées : 
-
-Nous avons utilisé des bibliothèques Tkinter standards tels que : 
-
-- `Tk`:  pour générer des choix aléatoires pour l’ordinateur et choisir les messages personnalisés 
-- `Text` : pour ajouter des pauses (laisser le temps de lire à l’utilisateur, simule une réflexion de l’ordinateur et un effet de suspense) 
-- `Menu` : pour ajouter des pauses (laisser le temps de lire à l’utilisateur, simule une réflexion de l’ordinateur et un effet de suspense) 
-- `Scrollbar` : pour ajouter des pauses (laisser le temps de lire à l’utilisateur, simule une réflexion de l’ordinateur et un effet de suspense) 
-- `filedialog` : pour ajouter des pauses (laisser le temps de lire à l’utilisateur, simule une réflexion de l’ordinateur et un effet de suspense) 
-- `messagebox` : pour ajouter des pauses (laisser le temps de lire à l’utilisateur, simule une réflexion de l’ordinateur et un effet de suspense) 
+Le programme utilise uniquement des modules de la bibliothèque standard Python tels que : 
+Tkinter : bibliothèque standard pour la création de l’interface graphique
+- `Tk`: fenêtre principale
+- `Text` : zone de texte
+- `Menu` : création de la barre de menus
+- `Scrollbar` : barre de défilement verticale 
+- `filedialog` : ouverture et enregistrement des fichiers
+- `messagebox` : affiche les messages
+- ´colorchooser´ :sélectionne une couleur pour le texte
 Aucun installation n’est normalement nécessaire, Tkinter est inclus avec Python sur Windows, macOs et la plupart des distributions Linux.
-
 ## Ajustements du projet et choix réalisés ??
-Au départ, nous avions prévu de limiter chaque partie à trois manches maximum. Néanmoins, cela s’est avéré trop rigide au niveau de l’expérience utilisateur. Par la suite, la possibilité de quitter (q) a été implémentée.
-De plus, la boucle `while` utilisé pour contrôler les entrées utilisateurs n’est pas représenté dans les diagrammes de flux car elle alourdirait inutilement la structure. Elle n’est pas nécessaire à la compréhension de la logique du programme tout comme les `time.sleep`. On souhaitait également trouver une façon d’éviter que les messages personnalisés d’une liste soient tous utilisées une fois avant de se répéter mais nous n’avons pas eu le temps.  
-
-!!! Souhaiter rajouter des fonctionnalités pour mettre en gras, italique et modifier la couleur du texte : mais manque de temps et difficulté.
-
+Au départ, j’avais prévu de faire des boutons pour la mise en forme du texte. Après un essai, j’ai réalisé que cela chargeait visuellement le bloc-notes. J’ai donc opté pour un menu déroulant, c’est plus discret.
 ## Améliorations possibles
-- Possibilité de mettre en gras, couleurs et en italique. 
-- ????
-  
-## Conclusion ??
-Ce projet m’a permis de mettre en pratique les notions de base de Python tels que les fonctions, la portée des variables. Grâce à l’utilisation de Tkinter, j’ai appris à créer une interface graphique simple et fonctionnelle et les widgets tel que les menus, la zone de texte, etc. à utiliser GitHub.
+- Gestion d’erreur (par exemple, s’il est impossible d’ouvrir le fichier)
+- Raccourcis clavier
+- Fonctionnalités avancées : 
+## Conclusion 
+Ce projet m’a permis de mettre en pratique les notions de base de Python tels que les fonctions et les structurelles conditionnelles. Grâce à l’utilisation de Tkinter, j’ai appris à créer une interface graphique simple et fonctionnelle et manipuler les différents widgets comme les menus, la zone de texte, la barre de défilement. Ce travail m’a aussi permis de revisiter GitHub et de revoir son utilisation.
 
-## Références ???
+## Références
 Ce projet s'est appuyé sur les ressources suivantes: 
-- Documentation python du cours
-- Documentation GitHub: https://docs.github.com/fr/get-started/start-your-journey/hello-world  
-- Bibliothèques standards de python *time* et *random*
+### Support de cours
+Cookbook d’introduction python sur Moodle
+Cookbook Introduction TK  sur Moodle
+Book 1 intro tk sur Moodle
+### Tutoriels et articles consultés
+Menus Tkinter : Simplifiez vos interfaces
+https://blog.alphorm.com/ajouter-menu-tkinter-interface-python
+Dialogues de fichiers avec Tkinter
+https://blog.alphorm.com/dialogues-fichiers-tkinter
+Modifier Police et Taille des Widgets Tkinter — CodeSpace
+https://wikiform.fr/codespace/modifier-police-et-taille-des-widgets-tkinter/
+Comment fermer une fenêtre Tkinter avec un bouton — DelftStack https://www.delftstack.com/fr/howto/python-tkinter/how-to-close-a-tkinter-window-with-a-button/
+Tkinter Scrollbar
+https://www.tutorialspoint.com/python/tk_scrollbar.htm
+How To Create Message Boxes With Python Tkinter? https://www.pythontutorial.net/tkinter/tkinter-messagebox/
+Tkinter Menu 
+https://www.pythontutorial.net/tkinter/tkinter-menu/
+Tkinter Text
+https://www.pythontutorial.net/tkinter/tkinter-text/
+How to Wrap Text in Label in Tkinter Python 
+https://www.delftstack.com/howto/python-tkinter/how-to-wrap-text-in-label-in-tkinter/
+Python | place() method in Tkinter — GeeksforGeeks https://www.geeksforgeeks.org/python-place-method-in-tkinter/
+Change the color of certain words in the Tkinter Text widget — GeeksforGeeks https://www.geeksforgeeks.org/python/change-the-color-of-certain-words-in-the-tkinter-text-widget/
+Python Tkinter – Choose Color Dialog — GeeksforGeeks https://www.geeksforgeeks.org/python/python-tkinter-choose-color-dialog/
+Tkinter: Using tags to style text — python.19633.com https://python.19633.com/fr/GUI/Tkinter/1001036224.html
+### Outils utilisés
 - Microsoft Copilot
 - ChatGPT
+
