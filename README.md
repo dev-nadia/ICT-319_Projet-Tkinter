@@ -11,7 +11,7 @@ Le projet consiste à créer une application de bloc-notes développée en Pytho
 
 ## Fonctionnalités 
 
-- Ouverture et enregistrer des fichiers .txt
+- Ouverture et enregistrer des fichiers `.txt`
 
 - Menu simple : Nouveau, Ouvrir, Enregistrer, Quitter 
 
