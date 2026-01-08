@@ -1,6 +1,7 @@
 # Bloc-notes en Tkinter
 ### Informations générales
 - Cours: ICT-319 – Projet Tkinter
+- Nom du fichier: Bloc-notes_Tkinter.py
 - Date de rendu: 08 janvier 2026
 - Auteur: Nadia Abdi Mohamoud (SI-CA1a) 
 
