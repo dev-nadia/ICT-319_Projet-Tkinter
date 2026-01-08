@@ -4,76 +4,78 @@
 - Date de rendu: 08 janvier 2026
 - Auteur: Nadia Abdi Mohamoud (SI-CA1a) 
 
-## Description 
-Le projet consiste à créer une petite application de type bloc-notes, développée en Python avec la bibliothèque Tkinter. Il permet de créer, modifier et enregistrer des fichiers. L’objectif est d’apprendre à utilisant les gestionnaires de layout `.pack()`, `.grid()`, `.place()`.
-## Fonctionnalités 
+## Description
+Le projet consiste à créer une petite application de type bloc-notes, développée en Python avec la bibliothèque Tkinter. Il permet de créer, modifier et enregistrer des fichiers. L’objectif est d’apprendre à utiliser les gestionnaires de layout `.pack()`, `.grid()`, `.place()`.
+
+## Fonctionnalités
+
 ### Menu Fichier
-*Nouveau* :efface le texte
--**Ouvrir ** :charge un fichier `.txt`
--**Enregistrer ** :sauvegarde le fichier
--**Quitter ** :ferme l’application
+- **Nouveau** : efface le texte  
+- **Ouvrir** : charge un fichier `.txt`  
+- **Enregistrer** : sauvegarde le fichier  
+- **Quitter** : ferme l’application  
+
 ### Menu Édition
-- Copier
-- Coller
--Couper
+- Copier  
+- Coller  
+- Couper  
+
 ### Menu Style
--**Gras**
--**Italique**
--**Couleur de texte**
+- **Gras**  
+- **Italique**  
+- **Couleur de texte**  
+
 ### Aide
--Bouton « ? » affiche un message explicatif
-## Fonctions du programme 
+- Bouton « ? » : affiche un message explicatif  
 
-- **new_file()**: efface tout le contenu de la zone de texte
-- **open_file()**:  ouvre un fichier texte et affiche son contenu
-- **save_file()**: enregistre le contenu de la zone de texte dans un fichier
-- **quit()**: fermer la fenêtre principale
-- **copy_text()** ,**paste_text()**  et**cut_text()** :
-- **bold_text()** ,**italic_text()**applique des styles au texte sélectionné
-- **change_color()**: ouvre une palette de couleurs et applique la couleur choisie
-- **help_message()**:affiche une fenêtre d’aide
+## Fonctions du programme
+- **new_file()** : efface tout le contenu de la zone de texte  
+- **open_file()** : ouvre un fichier texte et affiche son contenu  
+- **save_file()** : enregistre le contenu de la zone de texte dans un fichier  
+- **quit()** : ferme la fenêtre principale  
+- **copy_text()**, **paste_text()** et **cut_text()**  
+- **bold_text()**, **italic_text()** : applique des styles au texte sélectionné  
+- **change_color()** : ouvre une palette de couleurs et applique la couleur choisie  
+- **help_message()** : affiche une fenêtre d’aide  
 
-## Niveau de difficulté : 
-Ce projet a un niveau de difficulté de débutant à intermédiaire. 
-- ** Niveau facile** :
-Importation et utilisation de la bibliothèque standard Tkinter pour l’interface graphique.
-Création de la fenêtre Tkinter
-Ajout d’un widget ´Text´
-Ajout d’un bouton
-Utilisation de `.pack()`, `.grid()`, `.place()`.
-Affichage de ´messagebox.showinfo()´
-Utilisation des structures conditionnelles (´if´,´return´) 
-Organisation du code en fonctions claires et distinctes
-- **Niveau intermédiaire** :
-Manipulation des fichiers 
-Utilisation de menus (´Menu´,´add_command,´add_cascade´)
-Utilisation de tags pour le style (´tag_configure´,´tag_add´)
-Ajout d’une barre de défilement fonctionnelle (scrollbar)
+## Niveau de difficulté
+Ce projet a un niveau de difficulté de débutant à intermédiaire.
 
+- **Niveau facile** :  
+  Importation et utilisation de la bibliothèque standard Tkinter pour l’interface graphique.  
+  Création de la fenêtre Tkinter  
+  Ajout d’un widget `Text`  
+  Ajout d’un bouton  
+  Utilisation de `.pack()`, `.grid()`, `.place()`  
+  Affichage de `messagebox.showinfo()`  
+  Utilisation des structures conditionnelles (`if`, `return`)  
+  Organisation du code en fonctions claires et distinctes  
 
+- **Niveau intermédiaire** :  
+  Manipulation des fichiers  
+  Utilisation de menus (`Menu`, `add_command`, `add_cascade`)  
+  Utilisation de tags pour le style (`tag_configure`, `tag_add`)  
+  Ajout d’une barre de défilement fonctionnelle (scrollbar)  
 
-## Installation 
+## Installation
 
-### Prérequis 
-
-Python 3.12 doit être installé sur votre ordinateur.
+### Prérequis
+Python 3.12 doit être installé sur votre ordinateur.  
 Tkinter (interface graphique native)
 
-### Étapes 
+### Étapes
 
-**Téléchargez le projet**: 
+**Téléchargez le projet :**
 
-1. Allez sur le dépôt GitHub (repository).
-
-2. Cliquez sur le bouton vert **Code** puis sélectionnez **Download ZIP**. 
-
-3. Extrayez le fichier ZIP dans un dossier de votre choix. 
-
-4. **Ouvrez le dossier du projet**, par exemple dans un terminal ou via un éditeur de code comme VS Code ou Pycharm. 
-
+1. Allez sur le dépôt GitHub (repository).  
+2. Cliquez sur le bouton vert **Code**, puis sélectionnez **Download ZIP**.  
+3. Extrayez le fichier ZIP dans un dossier de votre choix.  
+4. **Ouvrez le dossier du projet**, par exemple dans un terminal ou via un éditeur de code comme VS Code ou PyCharm.  
 5. **Lancez le programme** avec la commande suivante dans le terminal :
+
 ```bash
-   python Bloc-notes_Tkinter.py.
+python Bloc-notes_Tkinter.py
+
 ```
 ## Utilisation 
 Après avoir lancé le programme, l’utilisateur peut commencer à écrire du texte dans la zone principale. Le  menu *Fichier* permet de créer un nouveau document,  d’ouvrir un fichier texte déjà présent sur l’ordinateur  ou d’enregistrer le contenu présent dans la zone de texte. Le menu *Édition* permet de copier, coller et couper. Le menu*Style* permet de mettre en gras, en italique ou de modifier la couleur du texte sélectionné. Pour terminer, le bouton « ?» affiche une petite fenêtre d’aide expliquant le fonction générale du bloc-notes. 
