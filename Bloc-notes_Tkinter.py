@@ -1,7 +1,7 @@
 # Nom: I319_Bloc-notes_Tkinter.py
 # Auteur: Nadia Abdi Mohamoud
 # Date: 08.01.2026
-# Purpose : Créer un projet Tkinter en utilisant .grid(), .place(), .pack()
+# Objectif : Créer un projet Tkinter en utilisant .grid(), .place(), .pack()
 
 #-------------------------
 #       BIBLIOTHEQUES
@@ -149,4 +149,5 @@ btn_help.place(relx=0,rely=1, anchor="sw")
 
 
 root.mainloop() #boucle principale de Tkinter : garde la fenêtre ouverte et active
+
 
