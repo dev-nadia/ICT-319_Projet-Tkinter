@@ -130,7 +130,8 @@ https://www.delftstack.com/howto/python-tkinter/how-to-wrap-text-in-label-in-tki
 - Change the color of certain words in the Tkinter Text widget —GeeksforGeeks
 https://www.geeksforgeeks.org/python/change-the-color-of-certain-words-in-the-tkinter-text-widget/
 - Python Tkinter – Choose Color Dialog — GeeksforGeeks https://www.geeksforgeeks.org/python/python-tkinter-choose-color-dialog/
-Tkinter: Using tags to style text — python.19633.com https://python.19633.com/fr/GUI/Tkinter/1001036224.html
+- Tkinter: Using tags to style text — python.19633.com
+https://python.19633.com/fr/GUI/Tkinter/1001036224.html
 ### Outils utilisés
 - Microsoft Copilot
 - ChatGPT
