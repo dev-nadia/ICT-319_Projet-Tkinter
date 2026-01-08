@@ -80,7 +80,7 @@ python Bloc-notes_Tkinter.py
 ## Utilisation 
 Après avoir lancé le programme, l’utilisateur peut commencer à écrire du texte dans la zone principale. Le  menu *Fichier* permet de créer un nouveau document,  d’ouvrir un fichier texte déjà présent sur l’ordinateur  ou d’enregistrer le contenu présent dans la zone de texte. Le menu *Édition* permet de copier, coller et couper. Le menu*Style* permet de mettre en gras, en italique ou de modifier la couleur du texte sélectionné. Pour terminer, le bouton « ?» affiche une petite fenêtre d’aide expliquant le fonction générale du bloc-notes. 
 
-## Bibliothèques utilisées : 
+## Bibliothèques utilisées
 Le programme utilise uniquement des modules de la bibliothèque standard Python tels que : 
 Tkinter : bibliothèque standard pour la création de l’interface graphique
 - `Tk`: fenêtre principale
@@ -89,14 +89,18 @@ Tkinter : bibliothèque standard pour la création de l’interface graphique
 - `Scrollbar` : barre de défilement verticale 
 - `filedialog` : ouverture et enregistrement des fichiers
 - `messagebox` : affiche les messages
-- ´colorchooser´ :sélectionne une couleur pour le texte
+- `colorchooser` :sélectionne une couleur pour le texte
+  
 Aucun installation n’est normalement nécessaire, Tkinter est inclus avec Python sur Windows, macOs et la plupart des distributions Linux.
-## Ajustements du projet et choix réalisés ??
+
+## Ajustements du projet et choix réalisés 
 Au départ, j’avais prévu de faire des boutons pour la mise en forme du texte. Après un essai, j’ai réalisé que cela chargeait visuellement le bloc-notes. J’ai donc opté pour un menu déroulant, c’est plus discret.
+
 ## Améliorations possibles
 - Gestion d’erreur (par exemple, s’il est impossible d’ouvrir le fichier)
 - Raccourcis clavier
-- Fonctionnalités avancées : 
+- Fonctionnalités avancées
+- 
 ## Conclusion 
 Ce projet m’a permis de mettre en pratique les notions de base de Python tels que les fonctions et les structurelles conditionnelles. Grâce à l’utilisation de Tkinter, j’ai appris à créer une interface graphique simple et fonctionnelle et manipuler les différents widgets comme les menus, la zone de texte, la barre de défilement. Ce travail m’a aussi permis de revisiter GitHub et de revoir son utilisation.
 
